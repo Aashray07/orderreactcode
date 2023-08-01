@@ -21,6 +21,8 @@ const RegisterPage = () => {
 
     try {
       // Send the POST request to your backend API
+      console.log("pprprp");
+      console.log(process.env.REACT_APP_ORDER_BASE_URL);
       const response = await fetch(`${process.env.REACT_APP_ORDER_BASE_URL}/register`, {
         method: 'POST',
         headers: {
